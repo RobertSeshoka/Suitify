@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "206613640849",
+    "project_id": "suitify-dbb10",
+    "storage_bucket": "suitify-dbb10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206613640849:android:7b29dd75a29c60502cf130",
+        "android_client_info": {
+          "package_name": "com.example.suitify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206613640849-m7k6lt5jhuooeaqnc0lns70q6l8hcusc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc2Z_iAEKH0dMOC0_oFmzp47mfku6ImTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206613640849-m7k6lt5jhuooeaqnc0lns70q6l8hcusc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

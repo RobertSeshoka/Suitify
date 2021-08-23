@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".Dashboard">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginLeft="0dp"
+                android:background="#DE5DF4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="168dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="14dp"
+                    android:text="My Dashboard"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="233dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="12sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="58dp"
+                    android:layout_height="63dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="145dp"
+                    android:src="@drawable/profilepic2" />
+
+
+            </LinearLayout>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54dp"
+                android:alignmentMode="alignMargins"
+                android:background="#ffff"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="202dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:background="#025F56"
+                    android:onClick="newItem"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="newItem"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="99dp"
+                            android:layout_height="98dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:onClick="newItem"
+                            android:src="@drawable/addnew"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_below="@+id/text1"
+                            android:layout_gravity="center"
+                            android:text="Add new item"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="202dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:background="#ffff"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="viewGames"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="127dp"
+                            android:layout_height="99dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:onClick="viewGames"
+                            android:src="@drawable/collections"
+                            app:civ_border_color="#ffff"
+                            app:civ_border_width="2dp"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="center"
+                            android:text="My Collection"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="202dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:background="#ffff"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="category"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="92dp"
+                            android:layout_height="95dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:onClick="category"
+                            android:src="@drawable/category"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="center"
+                            android:text="Category"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="202dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="settings"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="105dp"
+                            android:layout_height="95dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:onClick="settings"
+                            android:src="@drawable/settings"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="center"
+                            android:text="Settings"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="202dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:onClick="stats"
+                    app:cardCornerRadius="17dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="stats"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="center"
+                            android:text="Stats"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="104dp"
+                            android:layout_height="93dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:onClick="stats"
+                            android:src="@drawable/stats"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="202dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:onClick="stats"
+                    app:cardCornerRadius="17dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="profile"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_gravity="center"
+                            android:text="Profile"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="104dp"
+                            android:layout_height="93dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:onClick="profile"
+                            android:src="@drawable/profilepic2"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="168dp" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

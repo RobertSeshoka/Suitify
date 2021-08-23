@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    tools:context=".Sign_Up">
+
+
+    <LinearLayout
+        android:id="@+id/mainLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:onClick="back"
+                android:layout_marginTop="23dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="Create Account"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.23"
+            android:background="@drawable/inputtext"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.23"
+            android:background="@drawable/inputtext"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:passwordToggleEnabled="true" />
+
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.23"
+            android:background="@drawable/inputtext"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="18dp"
+                android:onClick="signup"
+                android:text="Sign Up"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addImageView"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+
+                android:onClick="signup"
+                android:src="@drawable/forward"
+                app:civ_border_color="#DE5DF4"
+                app:civ_border_width="2dp"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="168dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
